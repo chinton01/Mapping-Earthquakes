@@ -26,12 +26,9 @@ let map = L.map('mapid', {
 })
 // Pass our map layers into our layers control and add the layers control to the map.
 L.control.layers(baseMaps).addTo(map);
-// Then we add our 'graymap' tile layer to the map.
-light.addTo(map);
 
-// Accessing the Toronto airline routes GeoJSON URL.
 // Accessing the Toronto neighborhoods GeoJSON URL.
-let torontoHoods = "https://raw.githubusercontent.com/<GitHub_name>/Mapping_Earthquakes/main/torontoNeighborhoods.json";
+let torontoHoods = "https://raw.githubusercontent.com/chinton01/Mapping-Earthquakes/main/torontoNeighborhoods.json";
 
 // Grabbing our GeoJSON data.
 d3.json(torontoHoods).then(function(data) {
