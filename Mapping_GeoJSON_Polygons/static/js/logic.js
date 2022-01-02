@@ -31,7 +31,7 @@ light.addTo(map);
 
 // Accessing the Toronto airline routes GeoJSON URL.
 // Accessing the Toronto neighborhoods GeoJSON URL.
-let torontoHoods = "https://raw.githubusercontent.com/chinton01/Mapping-Earthquakes/main/torontoRoutes.json";
+let torontoHoods = "https://raw.githubusercontent.com/chinton01/Mapping-Earthquakes/main/torontoNeighborhoods.json";
 
 // Grabbing our GeoJSON data.
 d3.json(torontoHoods).then(function(data) {
